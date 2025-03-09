@@ -10,7 +10,14 @@ body {
 
 h1 {
     font-size: 32px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;  /* Reduced from 30px to bring subtitle closer */
+}
+
+.subtitle {
+    font-size: 16px;
+    color: #666;  /* Slightly lighter than the main text */
+    margin-bottom: 30px;  /* Space between subtitle and main content */
+    font-weight: normal;
 }
 
 p {
