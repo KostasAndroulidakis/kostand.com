@@ -67,7 +67,7 @@ h2:after {
 
 .platform {
     display: flex;
-    align-items: center;
+    align-items: left;
     margin-bottom: 5px;
 }
 
