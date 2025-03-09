@@ -5,10 +5,10 @@ body {
     margin: 0 auto;
     padding: 40px 20px;
     color: #333;
+    text-align: center;
 }
 
 h1 {
-    text-align: center;
     font-size: 32px;
     margin-bottom: 30px;
 }
@@ -24,18 +24,6 @@ a {
 
 a:hover {
     text-decoration: underline;
-}
-
-ul {
-    padding-left: 20px;
-}
-
-li {
-    margin-bottom: 8px;
-}
-
-.center-text {
-    text-align: center;
 }
 
 .section {
