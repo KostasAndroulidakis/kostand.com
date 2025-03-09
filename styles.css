@@ -11,13 +11,13 @@ body {
 
 h1 {
     font-size: 32px;
-    margin-bottom: 10px;  /* Reduced from 30px to bring subtitle closer */
+    margin-bottom: 10px; /* Reduced from 30px to bring subtitle closer */
 }
 
 .subtitle {
-    font-size: 12px;
-    color: #666;  /* Slightly lighter than the main text */
-    margin-bottom: 30px;  /* Space between subtitle and main content */
+    font-size: 17px;
+    color: #666; /* Slightly lighter than the main text */
+    margin-bottom: 30px; /* Space between subtitle and main content */
     font-weight: normal;
 }
 
@@ -26,7 +26,7 @@ p {
 }
 
 a {
-    color: #0366d6;
+    color: #3066d6;
     text-decoration: none;
 }
 
@@ -35,5 +35,49 @@ a:hover {
 }
 
 .section {
-    margin-top: 30px;
+    margin-top: 40px;
+}
+
+h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+h2:after {
+    content: "";
+    display: block;
+    width: 150px;
+    height: 1px;
+    background: #ddd;
+    margin: 15px auto 0;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    text-align: left;
+    margin-top: 25px;
+}
+
+.contact-item {
+    margin-bottom: 5px;
+}
+
+.contact-item h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.contact-item a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+@media (min-width: 768px) {
+    .contact-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
