@@ -1,3 +1,4 @@
+/* Base styles */
 body {
     font-family: "Calibri";
     font-size: 16px;
@@ -9,15 +10,22 @@ body {
     text-align: center;
 }
 
+/* Typography */
 h1 {
     font-size: 32px;
-    margin-bottom: 10px; /* Reduced from 30px to bring subtitle closer */
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    position: relative;
 }
 
 .subtitle {
     font-size: 15px;
-    color: #666; /* Slightly lighter than the main text */
-    margin-bottom: 30px; /* Space between subtitle and main content */
+    color: #666;
+    margin-bottom: 30px;
     font-weight: normal;
 }
 
@@ -25,9 +33,11 @@ p {
     margin-bottom: 15px;
 }
 
+/* Links */
 a {
     color: #505050;
     text-decoration: none;
+    word-break: break-word; /* Prevents text overflow on small screens */
 }
 
 a:hover {
@@ -35,14 +45,9 @@ a:hover {
     text-decoration: underline;
 }
 
+/* Section styling */
 .section {
     margin-top: 40px;
-}
-
-h2 {
-    font-size: 18px;
-    margin-bottom: 20px;
-    position: relative;
 }
 
 h2:after {
@@ -54,6 +59,7 @@ h2:after {
     margin: 15px auto 0;
 }
 
+/* Contact grid */
 .contact-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -66,6 +72,9 @@ h2:after {
 .contact-item {
     display: flex;
     flex-direction: column;
+    font-size: 13px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .platform {
@@ -83,8 +92,10 @@ h2:after {
     margin: 0;
 }
 
-.contact-item {
-    font-size: 13px;
-    width: 100%;
-    box-sizing: border-box;
+/* Responsive styles */
+@media (max-width: 767px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
 }
